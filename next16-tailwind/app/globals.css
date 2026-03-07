@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --peach: #e7816b;
+  --light-peach: #ffad9b;
+  --black: #1d1c1e;
+  --dark-grey: #333136;
+  --light-grey: #f1f3f5;
+}
+
+@theme inline {
+  --color-peach: var(--peach);
+  --color-light-peach: var(--light-peach);
+  --color-black: var(--black);
+  --color-dark-grey: var(--dark-grey);
+  --color-light-grey: var(--light-grey);
+  --text-48: max(3rem, 32px);
+  --text-40: max(2.5rem, 28px);
+  --text-20: max(1.25rem, 20px);
+  --text-16: max(1rem, 15px);
+  --text-15: max(0.938rem, 14px);
+  --text-14: max(0.875rem, 13px);
+  --breakpoint-des: 75rem;
+  --spacing-gutter: max(1.5rem, 24px);
+  --radius-15: max(15px, 0.938rem);
+}
+
+html {
+  font-size: calc(100vw / 1440 * 16);
+  scrollbar-width: none;
+  overflow-x: hidden;
+  background: #0e0e0e !important;
+
+  @media screen and (max-width: 1024px) {
+    font-size: calc(100vw / 1024 * 16);
+  }
+}
+
+body {
+  color: var(--dark-grey);
+  font-family: var(--font-jost);
+  background: #0e0e0e !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1;
+}
+
+main {
+  flex-grow: 1;
+}
+
+button {
+  @apply cursor-pointer;
+}
+
+.ac {
+  @apply px-gutter des:max-w-[max(72.375rem,689px)];
+  width: 100%;
+  margin-inline: auto;
+}
