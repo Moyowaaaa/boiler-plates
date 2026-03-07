@@ -1,6 +1,6 @@
 <template>
   <div class="home-page-container">
-    <h1>NUXT 3 + SCSS + GSAP</h1>
+    <h1>NUXT 3 + SCSS(7-1) + GSAP</h1>
   </div>
 </template>
 
